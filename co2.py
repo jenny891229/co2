@@ -1,3 +1,5 @@
+pip install streamlit numpy pandas pycaret
+
 import streamlit as st
 import numpy as np
 import pandas as pd
