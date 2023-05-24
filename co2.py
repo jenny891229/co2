@@ -1,8 +1,9 @@
-pip install streamlit numpy pandas pycaret
+
 
 import streamlit as st
 import numpy as np
 import pandas as pd
+import pycaret
 
 from pycaret.regression import load_model, predict_model,setup
 
