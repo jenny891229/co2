@@ -4,7 +4,7 @@ import pandas as pd
 
 from pycaret.regression import load_model, predict_model,setup
 
-file="FuelConsumptionCo2.csv"
+file="https://raw.githubusercontent.com/cchuang2009/2022-1/main/Python_IM/2023-2/data/FuelConsumptionCo2.csv"
 
 df = pd.read_csv(file)
 
