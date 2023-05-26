@@ -1,7 +1,1 @@
 pycaret
-numpy
-pandas
-streamlit
-load_model
-predict_model
-setup
