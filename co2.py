@@ -3,7 +3,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import pycaret as py
+
 
 from pycaret.regression import load_model, predict_model,setup
 
