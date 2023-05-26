@@ -1,9 +1,6 @@
-
-
 import streamlit as st
 import numpy as np
 import pandas as pd
-
 
 from pycaret.regression import load_model, predict_model,setup
 
@@ -28,12 +25,12 @@ col_values = []
 for col in num_cols:
     col_value = st.slider(col, min_value=float(df[col].min()), max_value=float(df[col].max()), value=float(df[col].median()))
     col_values.append(col_value)
-num_values = [col_value for col_value in col_values if isinstance(col_value, (int, float))]    
+num_values = [col_value for col_value in col_values if isinstance(col_value, (int, float))]
 
 # for cat_cols
-cat_values = []    
+cat_values = []
 for col in cat_cols:
-    ops = list(df[col].unique())   
+    ops = list(df[col].unique())
     cat_value = st.selectbox(col, options=ops, index=0)
     cat_values.append(cat_value)
 cat_values = [cat_value for cat_value in cat_values if isinstance(cat_value, str)]
