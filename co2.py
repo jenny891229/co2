@@ -12,7 +12,7 @@ num_cols=['ENGINESIZE', 'CYLINDERS','FUELCONSUMPTION_CITY','FUELCONSUMPTION_HWY'
           'FUELCONSUMPTION_COMB','FUELCONSUMPTION_COMB_MPG']
 cat_cols=['MAKE','VEHICLECLASS','TRANSMISSION','FUELTYPE']
 target=['CO2EMISSIONS']
-model_cat = load_model('model_pkl')
+model_cat = load_model('model_pkl.pkl')
 st.title('CO2 Emission of Vehicles')
 
 st.markdown("## 汽車二氧化碳排放量")
