@@ -1,1 +1,4 @@
 pycaret
+numpy
+pandas
+streamlit
